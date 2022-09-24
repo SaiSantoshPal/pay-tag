@@ -2,9 +2,9 @@ import pip
 pip.main(['install', 'flask'])
 pip.main(['install', 'scratchconnect'])
 from flask import Flask
-app = Flask(__name__)
-
 import scratchconnect
+
+app = Flask(__name__)
 
 @app.route('/balance/')
 def balance():
