@@ -55,5 +55,3 @@ def sub_balance_petrol(amount):
     except Exception:
         return "Transaction failed"
 
-if __name__ == "__main__":
-    app.run(debug=False)
