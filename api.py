@@ -76,7 +76,7 @@ def sub_balance_petrol(amount):
         set = variables.set_cloud_variable(variable_name="balance", value=int(balancese[0])-amount)
         balancese = variables.get_cloud_variable_value(variable_name="balance", limit=100) 
         # write_history(typeOf="subp", sub=amount)
-        return f"Successfull paid {amount}P!"
+        return "Successfull paid " + amount + "P!"
     except Exception:
         return "Transaction failed"
 
